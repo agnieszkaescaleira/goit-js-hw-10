@@ -3,7 +3,7 @@ export const fetchCountries = name => {
     const properties = 'fields=name,capital,population,flags,languages';
 
     return fetch(`${BASE_URL}${name}?${properties}`).then(response => {
-        console.log(!response.ok);
+        console.log(!response.ok);s
         if (!response.ok) {
             throw new Error(response.status);
         }
